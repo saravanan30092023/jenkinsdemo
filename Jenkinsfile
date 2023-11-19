@@ -8,7 +8,7 @@ pipeline{
            } 
            stage('Test'){
             steps {
-                echo 'Testing the code'
+                echo 'Testing the code thru jenkins'
              }
            }
            stage('Build'){
