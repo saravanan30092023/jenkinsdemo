@@ -29,7 +29,7 @@ pipeline {
             sh "mvn package -DskipTests"
            }
          }
-
+    }
    post  {
 
       always {
@@ -41,7 +41,7 @@ pipeline {
       failure {
        echo "failure"
       }
-     }
+
    }
 
 }
