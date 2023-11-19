@@ -4,7 +4,7 @@ pipeline {
         mavenHome = tool 'mavenjenkins'
         dockerHome = tool 'dockerjenkins'
         PATH ="${mavenHome}/bin:${dockerHome}/bin:${PATH}"
-}
+                 }
     stages {
         stage('Info') {
           steps {
@@ -41,8 +41,7 @@ pipeline {
       failure {
        echo "failure"
       }
-
+     }
    }
 
 }
-
